@@ -1,9 +1,10 @@
 import  { useState } from 'react';
 import {useCreateContactMutation, useGetContactByNameQuery} from '../../redux/contactApi'
-
+import css from './Form.module.css'
 export  default function Form () {
   const [createContact] = useCreateContactMutation()
   const contactsList = useGetContactByNameQuery().data;
+ 
 
     const [name, setName] = useState('');
     const [number, setNumber] = useState('')
@@ -44,9 +45,10 @@ export  default function Form () {
     return (
       <form onSubmit={handleSubmit}>
      
-          <label >
+          <label    className={css.label} >
             Name
             <input
+       
         type="text"
         name="name"
         value = {name}
@@ -58,9 +60,10 @@ export  default function Form () {
   
   </label>
   
-  <label >
+  <label   className={css.label} >
       Number
   <input
+    
     type="tel"
     name="number"
     value = {number}
@@ -70,7 +73,7 @@ export  default function Form () {
     required
   />
   </label>
-      <button type='submit' >
+      <button type='submit' className={css.btn}>
       Add contact
       </button>
          

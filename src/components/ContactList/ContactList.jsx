@@ -28,7 +28,7 @@ const getVisibleContact = () =>{
 
     return(
         <div>
-            <ul>
+            <ul >
              {data && <Contact contacts = { getVisibleContact()} onDelete ={deleteContact}></Contact>}
             </ul>
         </div>

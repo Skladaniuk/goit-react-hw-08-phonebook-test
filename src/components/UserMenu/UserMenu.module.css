@@ -1,0 +1,29 @@
+.greetings{
+    margin-left: 350px;
+    font-weight: 600;
+    text-decoration: none;
+    color: #2a363b;
+font-size: 18px;
+}
+.menu{
+    display: flex;
+    align-items: center;
+    font-weight: 200;
+    text-decoration: none;
+    color: #2a363b;
+font-size: 18px;
+    
+}
+.btn{
+    height: 30px;
+    width: 70px;
+    font-weight: 200;
+    text-decoration: none;
+    color: #2a363b;
+font-size: 18px;
+background-color:#2196f3;
+border: 1px;
+border-radius: 5px;
+margin-left: 100px;
+}
+
